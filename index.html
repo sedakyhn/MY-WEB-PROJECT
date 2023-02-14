@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DragonCo</title>
+	<link rel="shortcut icon" type="image/png" href="dist/images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+	
+    <link rel="stylesheet" href="dist/css/style.css">
+	<script src="https://kit.fontawesome.com/78a81832f4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+	
+</head>
+<body class=" has-animations">
+    <div class="body-wrap">
+        <header class="site-header text-light">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="index.html">
+								<img class="header-logo-image" src="dist/images/logo.png" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+					<div class="header-links">
+						
+						<div id="myNav" class="overlay">
+
+							
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						
+							
+							<div class="overlay-content">
+								<a class="nav-link scrollto active" href="#hero">HOME</a>
+								<a class="nav-link scrollto" href="#product">PRODUCTS</a>
+								<a class="nav-link scrollto" href="#what-we-do">COMPANY</a>
+								<a class="nav-link scrollto" href="#contact">CONTACT</a>
+							</div>
+						
+						</div>
+						
+						
+						<span onclick="openNav()"></span>
+
+					</div>
+					<span style="font-size:40px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="#hero" class="hero text-center text-light">
+				<div class="hero-bg"></div>
+				<div class="hero-particles-container">
+					<canvas id="hero-particles"></canvas>
+				</div>
+                <div>
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">FEEL THE ICE&FIRE</h1>
+	                        <p class="hero-paragraph">Dragon Energy Drink is a functional beverage. 
+								<br> Gives more energy when needed. 
+								<br> Increases mental and physical performance.</p>
+	                        <div class="hero-cta">
+								<a class="button button-primary button-wide-mobile" href="#">READ MORE</a>
+							</div>
+						</div>
+						<div class="mockup-container">
+							
+							<img class="device-mockup" src="dist/images/drink_02.png" alt="Dragon Hero">
+							
+							
+							
+							
+						</div>
+
+                    </div>
+                </div>
+            </section>
+			<section id="what-we-do" class="what-we-do">
+				<div class="container">
+				  <div class="row">
+					<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+						<div class="icon-box">
+						  <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+						  <h4>Innovation</a></h4>
+						  <p>We are here to constantly innovate and discover new tastes, to provide you with a better service.</p>
+						</div>
+					  </div>
+			
+					  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+						<div class="icon-box">
+						  <div class="icon"><i class="fa fa-star"></i></div>
+						  <h4>Quality</a></h4>
+						  <p>Our energy drinks with unique flavors and high vitamin content are produced with fruit extracts and high quality standards.</p>
+						</div>
+					  </div>
+			
+					  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+						<div class="icon-box">
+						  <div class="icon"><i class="fa-solid fa-recycle"></i></div>
+						  <h4>Sustainability</a></h4>
+						  <p>Environmental protection and recycling are always important to us, we have a separate R&D for our sustainability studies.</p>
+						</div>
+					  </div>
+				  </div>
+				  
+				</div>
+			</section><!-- End What We Do Section -->
+
+			
+ 
+			<section class="features-extended section">
+                <div class="features-extended-inner section-inner">
+					<div class="features-extended-wrap">
+						<div class="container">
+							<hr>
+							<div class="skill-container">
+								<div class="container row">
+						
+									<ul class="skills-bar-container">
+				
+										<li>
+										  <div class="progressbar-title">
+											<h3>SUGAR</h3>
+											
+											<span class="percent" id="sugar-pourcent">25%</span>
+										  </div>
+										  <div class="bar-container">
+											<span class="progressbar progressred" id="progress-sugar"></span>
+										  </div>
+										</li>
+										<li>
+										  <div class="progressbar-title">
+											<h3>CAFFEINE</h3>
+											<span class="percent" id="caffeine-pourcent">35%</span>
+										  </div>
+										  <div class="bar-container">
+											<span class="progressbar progressred" id="progress-caffeine"></span>
+										  </div>
+										</li>
+									  
+										<li>
+										  <div class="progressbar-title">
+											<h3>VITAMIN B12</h3>
+											<span class="percent" id="b12-pourcent">45%</span>
+										  </div>
+										  <div class="bar-container">
+											<span class="progressbar progressred" id="progress-b12"></span>
+										  </div>
+										</li>
+									  
+										
+									  
+									</ul>
+								</div>	
+								<div class="container row">
+									<ul class="skills-bar-container">
+										<li>
+											<div class="progressbar-title">
+											  <h3>VITAMIN B3</h3>
+											  <span class="percent" id="b3-pourcent">28%</span>
+											</div>
+											<div class="bar-container">
+											  <span class="progressbar progressred" id="progress-b3"></span>
+											</div>
+										  </li>
+										
+										  <li>
+											<div class="progressbar-title">
+											  <h3>VITAMIN B6</h3>
+											  <span class="percent" id="b6-pourcent">42%</span>
+											</div>
+											<div class="bar-container">
+											  <span class="progressbar progressred" id="progress-b6"></span>
+											</div>
+										  </li>
+										
+										  <li>
+											<div class="progressbar-title">
+											  <h3>TAURINE</h3>
+											  <span class="percent" id="taurine-pourcent">25%</span>
+											</div>
+											<div class="bar-container">
+											  <span class="progressbar progressred" id="progress-taurine"></span>
+											</div>
+										  </li>
+									</ul>
+								</div>	
+							</div>
+							<hr>
+
+
+						
+
+
+							<div id="product" class="feature-extended">
+								<div class="feature-extended-image">
+									
+									<img class="device-mockup is-revealing" src="dist/images/3.jpg" alt="iPhone Feature 01">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">BE FREE</h3>
+									<p class="m-0">Feel freedom, experience instant sparks and taste unique flavors</p>
+								</div>
+							</div>
+							
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									
+									<img class="device-mockup is-revealing" src="dist/images/large-13.jpg" alt="iPhone Feature 03">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">BE ACTIVE</h3>
+									<p class="m-0">Awaken all your senses with the energy drink with cans and glass bottles</p>
+								</div>
+							</div>
+
+							
+
+							
+						</div>
+						
+						
+						
+						
+							
+						
+					</div>
+					
+					
+					
+					
+                </div>
+				
+            </section>
+
+			<section>
+				<div class="container">
+					<h2 style="text-align:center;">Latest News</h2>
+					
+					<div class="container row">
+						<div class="col card">
+							<img src="dist/images/s1.jpeg" alt="Avatar" style="width:100%">
+							<div class="container-card">
+							  <h4><b></b></h4> 
+							  <p>Dragon Big Concert: 1st</p> 
+							</div>
+						</div>
+						<div class="col card">
+							<img src="dist/images/s1.jpg" alt="Avatar" style="width:100%">
+							<div class="container-card">
+							  <h4><b></b></h4> 
+							  <p>Grandbike 2022</p> 
+							</div>
+						</div>
+						<div class="col card">
+							<img src="dist/images/s2.jpg" alt="Avatar" style="width:100%">
+							<div class="container-card">
+							  <h4><b></b></h4> 
+							  <p>Olie Bicycle Race 2022</p> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+        </main>
+
+		<footer id="contact" class="site-footer">
+			<div class="footer-particles-container">
+				<canvas id="footer-particles"></canvas>
+			</div>
+			<div class="site-footer-top">
+				<section class="cta section text-light">
+					<div class="container-sm">
+						<div class="cta-inner section-inner">
+							<div class="cta-header text-center">
+								<h2 class="section-title mt-0">We are here for you</h2>
+								<p class="section-paragraph"> We care about you, your feedback, your thoughts. Contact us to serve you better.</p>
+								<div class="cta-cta">
+									<a class="button button-primary button-wide-mobile" href="#">Contact Us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="site-footer-bottom">
+				<div class="container">
+					<div class="site-footer-inner">
+						<div class="brand footer-brand">
+							<a href="#">
+								<img src="dist/images/logo.png" width="150px" alt="Venus logo">
+							</a>
+						</div>
+						<ul class="footer-links list-reset">
+							<li>
+								<a href="#">Contact</a>
+							</li>
+							<li>
+								<a href="#">About us</a>
+							</li>
+							<li>
+								<a href="#">FAQ's</a>
+							</li>
+							<li>
+								<a href="#">Support</a>
+							</li>
+						</ul>
+						<ul class="footer-social-links list-reset">
+							<li>
+								<a href="#">
+									<span class="screen-reader-text">Facebook</span>
+									<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="screen-reader-text">Twitter</span>
+									<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="screen-reader-text">Google</span>
+									<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<div class="footer-copyright">&copy; 2023 DragonCo, all rights reserved</div>
+					</div>
+				</div>
+			</div>
+        </footer>
+    </div>
+
+
+
+	<script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+	<script>
+		function openModal() {
+		  document.getElementById("myModal").style.display = "block";
+		}
+		
+		function closeModal() {
+		  document.getElementById("myModal").style.display = "none";
+		}
+		
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
+	
+
+
+
+    <script src="dist/js/main.min.js"></script>
+	<script src="dist/js/script.js"></script>
+	<!-- Jquery js-->
+	<script src="dist/js/jquery-3.6.0.min.js"></script>
+	<!-- Bootsrap js-->
+	<script src="dist/js/bootstrap.min.js"></script>
+	 
+</body>
+</html>
